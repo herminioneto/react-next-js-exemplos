@@ -1,3 +1,5 @@
+// Exemplo de componente react usando children(filhos):
+
 import styles from "./Title.module.css"
 
 function Title (props) {
