@@ -4,10 +4,10 @@ function HomePage () {
   // Pode-se usar tanto a tag com fechamento automático quanto a normal:
   return (
     <div>
-      <Title />
-      <Title></Title>
-      <h3>Hello World NextJs + ReactJs</h3>
-      <h4>Atualizando Servidor</h4>
+      <Title>Um Título</Title>
+      <p>Parágrafo qualquer</p>
+      <Title>Outro Título</Title>
+      <p>Outro parágrafo qualquer</p>
     </div>
   )
 }
