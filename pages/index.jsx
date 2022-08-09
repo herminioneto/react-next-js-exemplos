@@ -1,10 +1,20 @@
+import { useState } from "react"
+
 import Head from "next/head"
 
 import Title from "../src/components/title/Title"
 import Subtitle from "../src/components/subtitle/Subtitle"
+import Button from "../src/components/button/Button"
 
 function HomePage () {
-  // Pode-se usar tanto a tag com fechamento automático quanto a normal:
+
+  const [click, setClick] = useState(0)
+  
+  const handleClick = () => {
+    // console.log("HANDLE CLICK")
+    setClick(click + 1)
+  }
+
   return (
     <>
       <Head>
@@ -16,6 +26,12 @@ function HomePage () {
         <Title>Outro Título</Title>
         <Subtitle />
         <p>Um parágrafo qualquer</p>
+        <Button
+          onClick={handleClick}
+        >
+          Botão Qualquer
+        </Button>
+        <p>Cliques: {click}</p>
       </div>
     </>
   )
