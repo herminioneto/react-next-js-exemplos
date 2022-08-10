@@ -1,0 +1,9 @@
+.header {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.headerContent {
+  margin-left: 60px;
+}
